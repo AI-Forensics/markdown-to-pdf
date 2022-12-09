@@ -63,7 +63,9 @@ function GetMarkdownIt() {
 	md.use(markdownItEmoji);
 	md.use(markdownItFootnote);
 	md.use(markdownItTasks);
-	md.use(markdownItYAML);
+	md.use(markdownItYAML, {
+		templateDir: 'template'
+	});
 	
 	return md;
 }
