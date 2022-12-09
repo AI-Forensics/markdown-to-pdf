@@ -13,6 +13,10 @@ const markdownIt = require('markdown-it');
 const markdownItAnchor = require('markdown-it-anchor');
 const markdownItTOC = require('markdown-it-toc-done-right');
 const markdownItEmoji = require('markdown-it-emoji');
+// enabling more stuff
+const markdownItFootnote = require('markdown-it-footnote');
+const markdownItTasks = require('markdown-it-task-list-plus');
+const markdownItYAML = require('markdown-it-yaml');
 
 function nullCoalescing(value, fallback) {
 	return value !== undefined && value !== null ? value : fallback;
@@ -57,6 +61,9 @@ function GetMarkdownIt() {
 		slugify: slugify,
 	});
 	md.use(markdownItEmoji);
+	md.use(markdownItFootnote);
+	md.use(markdownItTasks);
+	md.use(markdownItYAML);
 	
 	return md;
 }
