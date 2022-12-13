@@ -1008,8 +1008,8 @@ pre code {
 /* additions */
 
 .meeting_metadata {
-  width: 80%;
-  margin: 2em;
+  width: 100%;
+  margin: 0 2em 2em 2em;
   border-radius: 4px;
   background-color: #f6f8fa;
   /* background-color: #fff; */
@@ -1020,11 +1020,13 @@ pre code {
 .meeting_metadata .label {
   font-weight: 100;
   text-transform: uppercase;
+  color: #57606a;
 }
 
 .meeting_metadata .meetings_repository {
   font-size: .75em;
   font-weight: 100;
+  color: #57606a;
 }
 
 .meeting_metadata .meetings_repository a::before {
@@ -1043,12 +1045,23 @@ pre code {
   padding: 1em;
   border: 1px solid #eed888;
   border-radius: 4px;
+} 
+
+.meeting_metadata .notes h2.label {
+  font-weight: 600;
+  margin: 0;
+  /* padding: 0;
+  padding-bottom: 0.3em; */
+  border-bottom: 1px solid #eed888;
 }
 
 .meeting_metadata h1::before {
   content: "meeting protocol";
   text-transform: uppercase;
   font-weight: 100;
+  display: block;
+  font-size: .5em;
+  color: #57606a;
 }
 
 .meeting_metadata h1 .meeting_number {
