@@ -1022,8 +1022,8 @@ pre code {
 }
 
 .meeting_metadata .notes {
-  background-color: #E6CDAE;
-  color: #495f75;
+  background-color: #fff8c5;
+  color: #24292f;
   padding: 1em;
 }
 
@@ -1039,6 +1039,7 @@ pre code {
 }
 
 .meeting_metadata .notes ul li::before {
+  color: rgb(154, 103, 0);
   content: '⚠️ ';
 }
 
@@ -1076,8 +1077,8 @@ a[href^="https://meet.jit.si"]::after,
 a[href^="https"][href*="zoom.us"]::after {
   content: "meeting";
 
-  border: 1px solid #495f75;
-  background-color: #E6CDAE;
+  border: 1px solid #eed888;
+  background-color: #fff8c5;
   color: #495f75;
 }
 
@@ -1090,6 +1091,6 @@ a[href^="https://mattermost"]::after {
   content: "meeting";
 
   border: 1px solid #495f75;
-  background-color: #E6CDAE;
+  background-color: #fff8c5;
   color: #495f75;
 }
