@@ -1022,8 +1022,8 @@ pre code {
 }
 
 .meeting_metadata .notes {
-  background-color: lightgoldenrodyellow;
-  color: darkslategrey;
+  background-color: #E6CDAE;
+  color: #495f75;
   padding: 1em;
 }
 
@@ -1042,17 +1042,25 @@ pre code {
   content: '⚠️ ';
 }
 
-a[href^="https://github.com"]::after {
-  content: "github";
+a[href^="https://meet.jit.si"]::after,
+a[href^="https"][href*="zoom.us"]::after,
+a[href^="https://github.com"]::after,
+a[href^="https://mattermost"]::after {
   display: inline-block;
   weight: 100;
   font-size: .75em;
   text-align: center;
   padding: .125em;
-  border-radius: 2px;
   white-space: nowrap;
+  margin-left: 1em;
+  border-radius: 2px;
+  
+}
 
-  background-color: #495F75;
+a[href^="https://github.com"]::after {
+  content: "github";
+
+  background-color: #0366d6;
   color: white;
 }
 
@@ -1064,17 +1072,24 @@ a[href^="https://github.com"][href*="projects"]::after {
   content: "github project";
 }
 
-a[href^="https://meet.jit.si"]::after {
+a[href^="https://meet.jit.si"]::after,
+a[href^="https"][href*="zoom.us"]::after {
   content: "meeting";
-  display: inline-block;
-  weight: 100;
-  font-size: .75em;
-  text-align: center;
-  padding: .125em;
-  border-radius: 2px;
-  border: 1px solid darkslategrey;
-  white-space: nowrap;
 
-  background-color: lightgoldenrodyellow;
-  color: darkslategrey;
+  border: 1px solid #495f75;
+  background-color: #E6CDAE;
+  color: #495f75;
+}
+
+a[href^="https://mattermost"]::after {
+  content: "mattermost";
+}
+
+.notes a[href^="https://meet.jit.si"]::after,
+.notes a[href^="https"][href*="zoom.us"]::after {
+  content: "meeting";
+
+  border: 1px solid #495f75;
+  background-color: #E6CDAE;
+  color: #495f75;
 }
