@@ -1013,9 +1013,30 @@ pre code {
   border-radius: 4px;
   background-color: #fff;
   border: 1px solid rgba(0,0,0,.125);
+  padding: 1em;
 }
 
 .meeting_metadata .label {
   font-weight: 100;
   text-transform: uppercase;
+}
+
+.meeting_metadata .notes {
+  background-color: lightgoldenrodyellow;
+  color: darkslategrey;
+}
+
+.meeting_metadata .notes ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.meeting_metadata .notes ul li {
+  padding-left: 1rem;
+  text-indent: -0.75rem;
+}
+
+.meeting_metadata .notes ul li::before {
+  content: '⚠️ ';
 }
