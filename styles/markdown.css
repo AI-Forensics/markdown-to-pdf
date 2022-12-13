@@ -1008,8 +1008,9 @@ pre code {
 /* additions */
 
 .meeting_metadata {
-  width: 100%;
-  margin: 0 2em 2em 2em;
+  /* width: calc(100%-2em); */
+  /* margin: 0 2em 2em 2em; */
+  margin-bottom: 2em;
   border-radius: 4px;
   background-color: #f6f8fa;
   /* background-color: #fff; */
@@ -1029,12 +1030,6 @@ pre code {
   color: #57606a;
 }
 
-.meeting_metadata .meetings_repository a::before {
-  content: "Meetings repository: ";
-  font-weight: 100;
-  text-transform: uppercase;
-}
-
 .meeting_metadata .meetings_repository a {
   font-weight: 400;
 }
@@ -1049,7 +1044,7 @@ pre code {
 
 .meeting_metadata .notes h2.label {
   font-weight: 600;
-  margin: 0;
+  margin: 0 0 .5em 0;
   /* padding: 0;
   padding-bottom: 0.3em; */
   border-bottom: 1px solid #eed888;
@@ -1070,7 +1065,7 @@ pre code {
 
 .meeting_metadata .notes ul {
   list-style: none;
-  margin: 0;
+  margin: .5em 0 0 0;
   padding: 0;
 }
 
@@ -1099,6 +1094,7 @@ a[href^="https://mattermost"]::after {
   white-space: nowrap;
   margin-left: .5em;
   border-radius: 2px;
+  text-transform: lowercase;
   
 }
 
