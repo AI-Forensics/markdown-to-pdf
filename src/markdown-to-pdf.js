@@ -64,7 +64,7 @@ function GetMarkdownIt() {
 	md.use(markdownItFootnote);
 	md.use(markdownItTasks);
 	md.use(markdownItYAML, {
-		templateDir: '/github/workspace/template'
+		templateDir: '/template'
 	});
 	
 	return md;
