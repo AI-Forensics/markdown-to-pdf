@@ -1024,6 +1024,7 @@ pre code {
 .meeting_metadata .notes {
   background-color: lightgoldenrodyellow;
   color: darkslategrey;
+  padding: 1em;
 }
 
 .meeting_metadata .notes ul {
@@ -1039,4 +1040,41 @@ pre code {
 
 .meeting_metadata .notes ul li::before {
   content: '⚠️ ';
+}
+
+a[href^="https://github.com"]::after {
+  content: "github";
+  display: inline-block;
+  weight: 100;
+  font-size: .75em;
+  text-align: center;
+  padding: .125em;
+  border-radius: 2px;
+  white-space: nowrap;
+
+  background-color: #495F75;
+  color: white;
+}
+
+a[href^="https://github.com"][href*="issues"]::after {
+  content: "github issue";
+}
+
+a[href^="https://github.com"][href*="projects"]::after {
+  content: "github project";
+}
+
+a[href^="https://meet.jit.si"]::after {
+  content: "meeting";
+  display: inline-block;
+  weight: 100;
+  font-size: .75em;
+  text-align: center;
+  padding: .125em;
+  border-radius: 2px;
+  border: 1px solid darkslategrey;
+  white-space: nowrap;
+
+  background-color: lightgoldenrodyellow;
+  color: darkslategrey;
 }
