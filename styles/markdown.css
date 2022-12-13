@@ -75,7 +75,7 @@ body {
   -webkit-print-color-adjust: exact;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
     sans-serif, Apple Color Emoji, Segoe UI Emoji;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.5;
   color: #24292e;
   word-wrap: break-word;
@@ -1011,8 +1011,9 @@ pre code {
   width: 80%;
   margin: 2em;
   border-radius: 4px;
-  background-color: #fff;
-  border: 1px solid rgba(0,0,0,.125);
+  background-color: #f6f8fa;
+  /* background-color: #fff; */
+  border: 1px solid #d0d7de;
   padding: 1em;
 }
 
@@ -1021,10 +1022,37 @@ pre code {
   text-transform: uppercase;
 }
 
+.meeting_metadata .meetings_repository {
+  font-size: .75em;
+  font-weight: 100;
+}
+
+.meeting_metadata .meetings_repository a::before {
+  content: "Meetings repository: ";
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.meeting_metadata .meetings_repository a {
+  font-weight: 400;
+}
+
 .meeting_metadata .notes {
   background-color: #fff8c5;
-  color: #24292f;
+  color: #57606a;
   padding: 1em;
+  border: 1px solid #eed888;
+  border-radius: 4px;
+}
+
+.meeting_metadata h1::before {
+  content: "meeting protocol";
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.meeting_metadata h1 .meeting_number {
+  font-weight: 200;
 }
 
 .meeting_metadata .notes ul {
@@ -1051,9 +1079,12 @@ a[href^="https://mattermost"]::after {
   weight: 100;
   font-size: .75em;
   text-align: center;
-  padding: .125em;
+  padding-top: .125em;
+  padding-bottom: .125em;
+  padding-left: .25em;
+  padding-right: .25em;
   white-space: nowrap;
-  margin-left: 1em;
+  margin-left: .5em;
   border-radius: 2px;
   
 }
@@ -1094,3 +1125,4 @@ a[href^="https://mattermost"]::after {
   background-color: #fff8c5;
   color: #495f75;
 }
+
