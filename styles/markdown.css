@@ -1167,14 +1167,33 @@ a[href^="https://mattermost"]::after {
   background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
 }
 
-.info_box.keep_mind .label {
-  font-size: 1.25em;
+.info_box .label {
+  font-size: 1.5em;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.info_box.todo .label {
+  content: "To-do:";
+  font-weight: 400;
 }
 
 .info_box .whomst::before {
   content: "for:";
   text-transform: uppercase;
   font-weight: 100;
+}
+
+.info_box .fauxheading {
+  width: 100%;
+}
+
+.info_box a.task_url {
+  display: block;
+  width: 100%;
+}
+
+.info_box .content {
+  background-color: #f1e270;
+  border: 2px solid black;
 }
