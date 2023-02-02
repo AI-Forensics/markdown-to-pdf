@@ -1148,9 +1148,9 @@ a[href^="https://mattermost"]::after {
 }
 
 .info_box.to_do {
-  background-color: #efd505;
-  opacity: 0.5;
-  background: repeating-linear-gradient( 45deg, #000000, #000000 6.5px, #efd505 6.5px, #efd505 32.5px );
+  background-color: #f1e270;
+  opacity: 1;
+  background: repeating-linear-gradient( 45deg, #787777, #787777 5.5px, #f1e270 5.5px, #f1e270 27.5px );
 }
 
 .info_box.decision {
@@ -1162,7 +1162,19 @@ a[href^="https://mattermost"]::after {
 
 .info_box.keep_mind {
   background-color: #ffffff;
-opacity: 0.5;
-background: radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#072933 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #072933 2px, #ffffff 2px) -1px 0;
-background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+  opacity: 1;
+  background: radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent) 10px 10px, linear-gradient(#8ac0d0 0.8px, transparent 0.8px) 0 -0.4px, linear-gradient(90deg, #8ac0d0 0.8px, #ffffff 0.8px) -0.4px 0;
+  background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
+}
+
+.info_box.keep_mind .label {
+  font-size: 1.25em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.info_box .whomst::before {
+  content: "for:";
+  text-transform: uppercase;
+  font-weight: 100;
 }
