@@ -1134,3 +1134,35 @@ a[href^="https://mattermost"]::after {
   color: #495f75;
 }
 
+/* infoboxes */
+
+.info_box {
+  /* width: calc(100%-2em); */
+  /* margin: 0 2em 2em 2em; */
+  margin-bottom: 2em;
+  border-radius: 4px;
+  background-color: #f6f8fa;
+  /* background-color: #fff; */
+  border: 1px solid #d0d7de;
+  padding: 1em;
+}
+
+.info_box.to_do {
+  background-color: #efd505;
+  opacity: 0.5;
+  background: repeating-linear-gradient( 45deg, #000000, #000000 6.5px, #efd505 6.5px, #efd505 32.5px );
+}
+
+.info_box.decision {
+  background-color: #f1e9ae;
+  opacity: 0.5;
+  background-size: 13px 13px;
+  background-image: repeating-linear-gradient(45deg, #000000 0, #000000 1.3px, #f1e9ae 0, #f1e9ae 50%);
+}
+
+.info_box.keep_mind {
+  background-color: #ffffff;
+opacity: 0.5;
+background: radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#072933 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #072933 2px, #ffffff 2px) -1px 0;
+background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+}
