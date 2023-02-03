@@ -1161,10 +1161,7 @@ a[href^="https://mattermost"]::after {
 }
 
 .info_box.keep_mind {
-  background-color: #ffffff;
-  opacity: 1;
-  background: radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent) 10px 10px, linear-gradient(#8ac0d0 0.8px, transparent 0.8px) 0 -0.4px, linear-gradient(90deg, #8ac0d0 0.8px, #ffffff 0.8px) -0.4px 0;
-  background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
+  background-color: #c6deec;
 }
 
 .info_box .label {
@@ -1183,7 +1180,7 @@ a[href^="https://mattermost"]::after {
 }
 
 .info_box .whomst::before {
-  content: "for:";
+  content: "for: ";
   text-transform: uppercase;
   font-weight: 100;
 }
@@ -1203,4 +1200,14 @@ a[href^="https://mattermost"]::after {
   /* margin: 1em; */
   padding: 1em;
   border-radius: 3px;
+}
+
+.info_box .content .due .label {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.info_box p {
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
