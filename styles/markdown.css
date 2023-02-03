@@ -1200,7 +1200,7 @@ a[href^="https://mattermost"]::after {
 .info_box .content {
   background-color: #f1e270;
   border: 1px solid #787777;
-  margin: 1em;
+  /* margin: 1em; */
   padding: 1em;
   border-radius: 3px;
 }
