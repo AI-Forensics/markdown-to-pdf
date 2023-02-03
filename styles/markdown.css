@@ -1150,7 +1150,7 @@ a[href^="https://mattermost"]::after {
 .info_box.to_do {
   background-color: #f1e270;
   opacity: 1;
-  background: repeating-linear-gradient( 45deg, #787777, #787777 5.5px, #f1e270 5.5px, #f1e270 27.5px );
+  background: repeating-linear-gradient( 45deg, #787777, #787777 14px, #f1e270 5.14px, #f1e270 28px );
 }
 
 .info_box.decision {
@@ -1173,7 +1173,11 @@ a[href^="https://mattermost"]::after {
   text-transform: uppercase;
 }
 
-.info_box.todo .label {
+.info_box.todo .fauxheading .label {
+  background-color: #f1e270;
+}
+
+.info_box.todo .fauxheading .label::before {
   content: "To-do:";
   font-weight: 400;
 }
@@ -1195,5 +1199,8 @@ a[href^="https://mattermost"]::after {
 
 .info_box .content {
   background-color: #f1e270;
-  border: 2px solid black;
+  border: 1px solid #787777;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 3px;
 }
