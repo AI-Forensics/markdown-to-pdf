@@ -1082,7 +1082,9 @@ pre code {
 a[href^="https://meet.jit.si"]::after,
 a[href^="https"][href*="zoom.us"]::after,
 a[href^="https://github.com"]::after,
-a[href^="https://mattermost"]::after {
+a[href^="https://mattermost"]::after,
+a[href^="https://doodle"],
+a[href^="mailto"] {
   display: inline-block;
   weight: 100;
   font-size: .75em;
@@ -1126,6 +1128,14 @@ a[href^="https://mattermost"]::after {
   content: "mattermost";
 }
 
+a[href^="https://doodle"]::after {
+  content: "doodle";
+}
+
+a[href^="mailto"]::after {
+  content: "email";
+}
+
 .notes a[href^="https://meet.jit.si"]::after,
 .notes a[href^="https"][href*="zoom.us"]::after {
   content: "meeting";
@@ -1166,6 +1176,7 @@ a[href^="https://mattermost"]::after {
 
 .info_box.keep_mind .fauxheading {
   border-bottom: 1px solid white;
+  margin-bottom: .5em;
 }
 
 .info_box .label {
@@ -1175,7 +1186,8 @@ a[href^="https://mattermost"]::after {
 }
 
 .info_box.todo .fauxheading {
-  border-bottom: 1px solid #787777;
+  border-bottom: 1px solid #000000;
+  margin-bottom: .5em;
 }
 
 .info_box.todo .fauxheading .label {
@@ -1223,3 +1235,5 @@ a[href^="https://mattermost"]::after {
 .info_box.todo a.schedule::before {
   /* content: "scheduling "; */
 }
+
+a
