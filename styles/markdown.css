@@ -1147,7 +1147,7 @@ a[href^="https://mattermost"]::after {
   padding: 1em;
 }
 
-.info_box.to_do {
+.info_box.todo {
   background-color: #f1e270;
   opacity: 1;
   background: repeating-linear-gradient( 45deg, #787777, #787777 14px, #f1e270 5.14px, #f1e270 28px );
