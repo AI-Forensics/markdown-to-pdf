@@ -1175,8 +1175,8 @@ a[href^="https://mattermost"]::after {
 }
 
 .info_box.todo .fauxheading .label::before {
-  content: "To-do:";
-  font-weight: 400;
+  content: "To-do: ";
+  /* font-weight: 400; */
 }
 
 .info_box .whomst::before {
@@ -1190,8 +1190,8 @@ a[href^="https://mattermost"]::after {
 }
 
 .info_box a.task_url {
-  display: block;
-  width: 100%;
+  display: inline-block;
+  /* width: 100%; */
 }
 
 .info_box .content {
@@ -1210,4 +1210,8 @@ a[href^="https://mattermost"]::after {
 .info_box p {
   margin-top: .5em;
   margin-bottom: .5em;
+}
+
+.info_box.todo a.schedule::before {
+  /* content: "scheduling "; */
 }
