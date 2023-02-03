@@ -1164,10 +1164,18 @@ a[href^="https://mattermost"]::after {
   background-color: #c6deec;
 }
 
+.info_box.keep_mind .fauxheading {
+  border-bottom: 1px solid white;
+}
+
 .info_box .label {
   font-size: 1.5em;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.info_box.todo .fauxheading {
+  border-bottom: 1px solid #787777;
 }
 
 .info_box.todo .fauxheading .label {
