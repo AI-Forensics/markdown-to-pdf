@@ -1084,7 +1084,9 @@ a[href^="https"][href*="zoom.us"]::after,
 a[href^="https://github.com"]::after,
 a[href^="https://mattermost"]::after,
 a[href^="https://doodle"],
-a[href^="mailto"] {
+a[href^="mailto"],
+a[href^="https://www.notion"]::after,
+a[href^="https://www.zotero.org/"]::after {
   display: inline-block;
   weight: 100;
   font-size: .75em;
@@ -1122,6 +1124,20 @@ a[href^="https"][href*="zoom.us"]::after {
   border: 1px solid #eed888;
   background-color: #fff8c5;
   color: #495f75;
+}
+
+a[href^="https://www.notion"]::after {
+  content: "notion page";
+  background-color: #000000;
+  border: 1px solid #000000;
+  color: #ffffff;
+}
+
+a[href^="https://www.zotero.org/groups/4867331/ai_forensics"]::after {
+  content: "zotero link";
+  background-color: #cc2936;
+  border: 1px solid #6f0e16;
+  color: #ffffff;
 }
 
 a[href^="https://mattermost"]::after {
@@ -1235,5 +1251,3 @@ a[href^="mailto"]::after {
 .info_box.todo a.schedule::before {
   /* content: "scheduling "; */
 }
-
-a
